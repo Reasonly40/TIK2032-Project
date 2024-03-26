@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery | Website Pribadi by Christian Roeroe</title>
+        <style>
+            h1{
+                font-family: Cambria;
+            }
+            p{
+                font-family: "Times New Roman";
+            }
+            .container {
+                display: flex;
+                align-items: center;
+            }
+            .gambar {
+                flex: 1;
+                margin-right: 20px;
+            }
+            .gallery {
+                display: grid;       
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+            }
+            .gallery img {
+                width: 200px;
+                height: 200px;
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="iguana.png" alt="Personal logo" height="200" width="200">
+            <h1>REASONLY PERSONAL HOMEPAGE</h1>      
+        </div>
+        <a href="index.html" target="situs pertama">
+            <button class="button">Home</button>
+        </a>
+        <a href="Gallery.html" target="situs kedua">
+            <button class="button">Gallery</button>
+        </a>
+        <a href="Blog.html" target="situs ketiga">
+            <button class="button">Blog</button>
+        </a>
+        <a href="Contact.html" target="situs keempat">
+            <button class="button">Contact</button>
+        </a>
+        <hr>
+
+        <h1>Gallery</h1>
+        <div class="gallery">
+        <img src="20230901_121413.jpg" alt="image">
+        <img src="IMG_0152.jpg" alt="image">
+        <img src="IMG_0879.jpg" alt="image">
+        <img src="IMG_9378.jpg" alt="image">
+        </div>
+    </body>
+</html>
