@@ -28,7 +28,7 @@ p{
 
 .quote{
     position: absolute;
-    top: 420px;
+    top: 530px;
     right: 30px;
     font-style: italic;
     font-size: 24px;
@@ -36,19 +36,13 @@ p{
 
 .profile-photo{
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 230px;
+    right: 140px;
 }
 
 .home-content{
     animation: slideInLeft 1s ease-in;
 }
-
-/* .item-1{
-    position: absolute;
-    top: 20px;
-    right: 110px;
-} */
 
 .container {
     display: flex;
@@ -74,6 +68,9 @@ a {
     border-width: 1px;
     border-style: solid;
     border-color: green;
+    position: relative;
+    bottom: 120px;
+    left: 820px;
 }
 
 .button a:hover, a:active{
