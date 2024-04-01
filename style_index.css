@@ -1,0 +1,93 @@
+*{
+    background-color: lightgoldenrodyellow;
+}
+
+html, body{
+    cursor: url('treecko.gif'), default;
+}
+
+h1{
+    font-family: Cambria;
+}
+
+p{
+    font-family: "Times New Roman";
+    font-size: 17px;
+    width: 500px;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.quote{
+    position: absolute;
+    top: 420px;
+    right: 30px;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.profile-photo{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.home-content{
+    animation: slideInLeft 1s ease-in;
+}
+
+/* .item-1{
+    position: absolute;
+    top: 20px;
+    right: 110px;
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.gambar {
+    flex: 1;
+    margin-right: 20px;
+}
+
+a {
+    cursor: url('sceptile.gif'), pointer;
+}
+
+.button a:link, a:visited{
+    font-family: 'Lucida Sans';
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+}
+
+.button a:hover, a:active{
+    background-color: green;
+}
+
+.horizontal-line{
+    border: none;
+    border-top: 1px solid black;
+}
+
+
+body > p{
+    font-size: 17px;
+    font-style: italic;
+    font-family: 'Gill Sans';
+}

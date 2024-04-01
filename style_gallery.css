@@ -1,0 +1,91 @@
+*{
+    background-color: lightgoldenrodyellow;
+}
+
+h1{
+    font-family: Cambria;
+}
+
+p{
+    font-family: "Times New Roman";
+}
+
+@keyframes transparency {
+    from{
+        opacity: 50%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.home-content{
+    animation: slideInLeft 1s ease-in;
+}
+
+html, body{
+    cursor: url('treecko.gif'), default;
+}
+
+a, img{
+    cursor: url('sceptile.gif'), pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.gambar {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.gallery {
+    display: grid;       
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.button a:link, a:visited{
+    font-family: 'Lucida Sans';
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+}
+
+.button a:hover, a:active{
+    background-color: green;
+}
+
+.horizontal-line{
+    border: none;
+    border-top: 1px solid black;
+}
+
+.gallery>a>img:hover, img:active{
+    animation: transparency 1s;
+    border: solid 3px black;
+}

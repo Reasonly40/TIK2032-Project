@@ -1,0 +1,107 @@
+*{
+    background-color: lightgoldenrodyellow;
+}
+
+h1{
+    font-family: Cambria;
+}
+
+p{
+    font-family: "Times New Roman";
+}
+
+html, body{
+    cursor: url('treecko.gif'), default;
+}
+
+a {
+    cursor: url('sceptile.gif'), pointer;
+}
+
+@keyframes transparency {
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.contact-content>p{
+    animation: slideInLeft 1s ease-in;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.gambar {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.button a:link, a:visited{
+    font-family: 'Lucida Sans';
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+}
+
+.button a:hover, a:active{
+    background-color: green;
+}
+
+.contact a{
+    position: relative;
+    bottom: -80px;
+    display: inline-block;
+    align-items: center;
+    animation: transparency 1s;
+}
+
+.horizontal-line{
+    border: none;
+    border-top: 1px solid black;
+}
+
+.contact-box{
+    padding: 10px 50px;
+    border: 3px dotted green;
+    background-color: black;
+    color: white;
+    width: 500px;
+    position: absolute;
+    right: 70px;
+    top: 290px;
+}
+
+.contact-box>h2, .contact-box>form, label{
+    background-color: black;
+}
+
+.contact-content{
+    width: 400px
+}
+
+input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
