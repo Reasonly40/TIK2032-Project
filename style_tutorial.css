@@ -1,0 +1,61 @@
+*{
+    background-color: lightgoldenrodyellow;
+}
+
+html, body{
+    cursor: url('treecko.gif'), default;
+}
+
+h1,h3{
+    font-family: Cambria;
+}
+
+p{
+    font-family: "Times New Roman";
+    font-size: 17px;
+    width: 500px;
+}
+
+a {
+    cursor: url('sceptile.gif'), pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.button a:link, a:visited{
+    font-family: 'Lucida Sans';
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    position: relative;
+    bottom: 120px;
+    left: 820px;
+}
+
+.button a:hover, a:active{
+    background-color: green;
+}
+
+.horizontal-line{
+    border: none;
+    border-top: 1px solid black;
+}
+
+
+body > p{
+    font-size: 17px;
+    font-style: italic;
+    font-family: 'Gill Sans';
+}
+
+.tutorial-video{
+    margin-left: 20px;
+}
