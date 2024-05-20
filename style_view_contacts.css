@@ -1,0 +1,39 @@
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: "Times New Roman";
+}
+
+h1 {
+    font-family: Cambria;
+}
+
+.contact-entry {
+    background-color: black;
+    color: white;
+    border: 3px solid green;
+    padding: 10px;
+    margin-top: 15px;
+    animation: slideRight 1s ease-in;
+}
+
+.contact-entry > h2, .contact-entry > p {
+    animation: transparency 2s;
+}
+
+@keyframes transparency {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
