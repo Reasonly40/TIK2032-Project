@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const pageTitle = document.querySelector('h1');
     let isBlue = false;
-    
+
     pageTitle.addEventListener('mouseenter', function() {
         const blinkInterval = setInterval(() => {
             if (isBlue) {
@@ -56,4 +56,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     typeWriter();
+
+    alert('Welcome to Reasonly Personal Homepage!');
+
+    var mainTitle = document.getElementById('main-title');
+
+    mainTitle.addEventListener('mouseover', function() {
+        mainTitle.style.color = 'blue';
+        mainTitle.textContent = 'Welcome to My Tutorial Page!';
+    });
+
+    mainTitle.addEventListener('mouseout', function() {
+        mainTitle.style.color = 'black';
+        mainTitle.textContent = 'REASONLY PERSONAL HOMEPAGE';
+    });
 });
